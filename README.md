@@ -1,10 +1,21 @@
-## Draw without switching between hundreds of sprites
+# Minecraft Sprite Helper
+![Logo](/readme/msh_logo_centered.png)
+#### Draw without switching between hundreds of sprites
 
-**This project is at planning stage**. I can't really code, so if anybody could help with that I'd really appreciate it. <br>
-Basic idea: you have a texture atlas with all the Minecraft blocks, edit it however you want and run the program. The atlas is cut into individual textures renamed accordingly. 
+## Status
 
-Additional files would (could) be "settings.cfg" file to set the texture size, input/output paths for the image(s), maximum amount of sprites before aborting and "names.txt" (or .csv) file to get the texture names from. 
+This is work-in-progress. The export option does work, but there's no default spritesheet. This is too being worked on. 
 
-There is a [**project**](https://github.com/Clashsoft/Texture-Separator) I'm currently using in pair with bat-script for renaming, but naming files accordingly right away would make it better. 
+## Basic idea
+In 1.5 Minecraft's texture system moved from 256x256px atlases to individual 16x16px textures, but while that allowed for more precise and robust resource pack work, the drawbacks I noticed were losses in consistency of quality and palettes due to not knowing how different textures actually look side-by-side, and in productivity, having to work with large amounts of files. 
 
-Please contact me via [Telegram](tg://resolve?domain=temhotaokeaha) or drop an issue here if you're able to help with the coding part. 
+This is a quality-of-life Java app made to help artists (and anyone, really) manage that. 
+
+## How does it work?
+**For _import_ option**, it takes a bulk of individual textures and stitches them together in a texture atlas meant to be edited. <br>
+**For _export_ option**, it takes the texture atlas plus name list and cuts it into individual textures titled accordingly to entries in that text file. 
+
+## Credits
+- **[Mojang](https://minecraft.net/)** - Original assets, of course
+- **[6LeoMC](https://github.com/yzl210/)** - All the code (thank you so much for this)
+- **[temhotaokeaha](https://github.com/temhotaokeaha/)** - (not so) Original idea and other stuff
