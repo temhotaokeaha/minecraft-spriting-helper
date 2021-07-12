@@ -5,6 +5,7 @@
 ## Status
 
 This is work-in-progress. The export option does work, but there's no default spritesheet. This is too being worked on. 
+Latest update: I frankly have no willpower to work on this, and I'm also moving away from Minecraft to something more open-source. Maybe one day. 
 
 ## Basic idea
 In 1.5 Minecraft's texture system moved from 256x256px atlases to individual 16x16px textures, but while that allowed for more precise and robust resource pack work, the drawbacks I noticed were losses in consistency of quality and palettes due to not knowing how different textures actually look side-by-side, and in productivity, having to work with large amounts of files. 
